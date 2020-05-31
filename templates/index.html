@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Templates 101</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+  
+      <div class="jumbotron text-center">
+        <h1>Mars Data</h1>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Learn more about Mars!</a></p>
+      </div>
+  
+      <!-- Craigslist Listings -->
+      <div class="row" id="craiglist-listings">
+        <div class="col-md-12">
+          <!-- <h4 class="heading">{{listings.price}} {{listings.headline}}</h4>
+          <small>{{listings.hood}}</small> -->
+          <h4 class="heading">Mars News Title: {{listings.news_title}}</h4>
+          <h5 class="heading">Mars News Description: {listings.news_description}}</h5>
+          <a href={{listings.featured_img_url}}></a>
+          <h6 class="heading">Current Mars Weather: {{listings.mars_weather}}</h6>
+          <table>
+            <tr>
+              <th>Description</th>
+              <th>Values</th>
+            </tr>
+            <tr>
+              <td>{{listings.mars_description}}</td>
+              <td>{{listings.mars_value}}</td>
+            </tr>
+          </table>
+          <h7 class="heading">Mars Hemisphere Image Title: {{listings.hemisphere_title}}</h7>
+          <a href={{listings.hemisphere_img}}></a>
+
+        </div>
+      </div>
+  
+    </div>
+  </body>
+  
+  </html>
